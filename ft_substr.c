@@ -6,7 +6,7 @@
 /*   By: basayoub <basayoub@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 16:43:17 by basayoub          #+#    #+#             */
-/*   Updated: 2026/10/19 13:59:57 by basayoub         ###   ########.fr       */
+/*   Updated: 2026/10/25 20:06:55 by basayoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if (start >= strlen(s))
+	if (start >= ft_strlen(s))
 		return (ft_strdup(""));
 	if (len > ft_strlen(s) - start)
 		len = ft_strlen(s) - start;

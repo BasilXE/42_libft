@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-static int	counter(char const *s, char c)
+static size_t	counter(char const *s, char c)
 {
-	int	i;
-	int	count;
+	size_t	i;
+	size_t	count;
 
 	count = 0;
 	i = 0;
@@ -28,7 +28,7 @@ static int	counter(char const *s, char c)
 	return (count);
 }
 
-static char	**checker(char **split, int i, int len)
+static char	**checker(char **split, size_t i, size_t len)
 {
 	split[i] = malloc (len + 1);
 	if (!split[i])
@@ -46,9 +46,9 @@ static char	**checker(char **split, int i, int len)
 
 static int	lenofword(char const *s, char c, char **split)
 {
-	int	i;
-	int	len;
-	int	j;
+	size_t	i;
+	size_t	len;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -73,10 +73,10 @@ static int	lenofword(char const *s, char c, char **split)
 	return (1);
 }
 
-static char	**coopy(int i, char const *s, char c, char **split)
+static char	**coopy(size_t i, char const *s, char c, char **split)
 {
-	int	j;
-	int	t;
+	size_t	j;
+	size_t	t;
 
 	j = 0;
 	while (s[i])

@@ -6,13 +6,13 @@
 /*   By: basayoub <basayoub@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 15:01:32 by basayoub          #+#    #+#             */
-/*   Updated: 2026/10/19 13:52:27 by basayoub         ###   ########.fr       */
+/*   Updated: 2026/10/25 19:43:29 by basayoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned char	*memo(unsigned char *d, unsigned char *s, size_t n)
+static unsigned char	*memo(unsigned char *d, unsigned char *s, size_t n)
 {
 	size_t	i;
 

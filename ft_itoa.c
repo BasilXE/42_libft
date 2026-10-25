@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-static char	*gg(int n, int i, char *str, int k)
+static char	*gg(int n, size_t i, char *str, size_t k)
 {
-	int	j;
-	int	l;
+	size_t	j;
+	int		l;
 
 	while (i > 0)
 	{
@@ -35,7 +35,7 @@ static char	*gg(int n, int i, char *str, int k)
 	return (str);
 }
 
-static char	*ff(int n, int i, char *str, int k)
+static char	*ff(int n, size_t i, char *str, size_t k)
 {
 	int	s;
 	int	l;
@@ -65,9 +65,9 @@ static char	*ff(int n, int i, char *str, int k)
 
 char	*ft_itoa(int n)
 {
-	int		i;
-	int		k;
-	char	*str;
+	size_t		i;
+	size_t		k;
+	char		*str;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));

@@ -14,8 +14,8 @@
 
 static char	*ft_strcat(char *dest, char *src)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	j = 0;
 	i = 0;
@@ -35,9 +35,9 @@ static char	*ft_strcat(char *dest, char *src)
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		i;
-	int		j;
-	char	*str;
+	size_t		i;
+	size_t		j;
+	char		*str;
 
 	i = 0;
 	j = 0;
